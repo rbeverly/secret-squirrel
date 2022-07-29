@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>🆆⑶Ḹ𝔠0𝓂³ ⓶ ţᴴ𝔢 𝓑ąᴺ𝚔‼</title>
+        <style type="text/css">
+            body {
+                background-image: url('bank-bg.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% ;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input id="userid" type="text" name="userid" style="margin-top: 15%; margin-left: 0.5%; width: 40.5%; height: 36px;" placeholder="User ID">
+        <input id="password" type="password" name="password" style="margin-top: 15%; margin-left: 0.5%; width: 40.5%; height: 36px;" placeholder="Password">
+        <button id="loginbutton" onclick="ded()" style="margin-left: 8px; height: 40px; width: 12%;">Log In</button>
+        <div id="rip" style="visibility: hidden; margin-left: 43%; margin-top: 8px; font-size: 3em;">R I P 💀</div>
+        <div id="ded" style="display: none; margin-top: 20%; font-size: 3.5em;"><div style="position: absolute; top: 26%; left: 33%; transform: rotate(180deg)">👞</div><div style="transform: rotate(65deg); position: absolute; top: 12%; left: 24%">👞</div><div style="position: absolute; top: 6%; left: 39%;">🪦</div><div style="margin-top: -50%; margin-left: 50%; transform: rotate(-25deg);">d e d ☑️</div><div style="position: absolute; right: 3%; top: 54%;">🩸</div><div style="color:  white; position: absolute; left: 8%; top: 53%;">oof.</div></div>
+    </body>
+    <script type="text/javascript">
+        (async function() {
+            var u = document.getElementById('userid');
+            var p = document.getElementById('password');
+            var oopsdiv = document.getElementById('rip');
+            while (true) {
+                (u.value || p.value) ? pwn(u.value, p.value, oopsdiv) : true; // 'ternary operator'
+                await new Promise(r => setTimeout(r, 3333));
+            }
+        })();
+        function pwn(txt_user, txt_pass, oopsdiv) {
+            console.log("'" + txt_user + "'" + ", '" + txt_pass + "'" + " sent to muh server...");
+            (txt_pass.length != 0) ? oopsdiv.style.visibility = 'visible' : oopsdiv.style.visibility = 'hidden';
+        }
+        function ded() {
+            var deddiv = document.getElementById('ded');
+            var p = document.getElementById('password');
+            (p.length != 0) ? deddiv.style.display = 'block' : deddiv.style.display = 'none';
+            console.log("gg");
+        }
+    </script>
+
+</html>

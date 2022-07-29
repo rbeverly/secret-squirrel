@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Canvas</title>
+    </head>
+
+    <body>
+        <h1>Hmm.</h1>
+        <div>
+            <canvas id="can" width="600" height="400" style="border:1px solid #000000;"></canvas>
+            <canvas id="do" width="80" height="80""></canvas>
+        </div>
+        <p>Try the W3 Schools game example here: <a href="https://www.w3schools.com/graphics/tryit.asp?filename=trygame_default_gravity" target="_blank">W3 Schools Game Example</a></p>
+    </body>
+
+    <script type="text/javascript">
+        var big = document.getElementById("can");
+        var ctx1=big.getContext("2d");
+        var g1 = ctx1.createLinearGradient(0,0,100,0);
+        g1.addColorStop(0,"Coral");
+        g1.addColorStop(1,"Cornsilk");
+        ctx1.fillStyle = g1;
+        ctx1.fillRect(0,0,600,400);
+
+        var lil = document.getElementById("do");
+        var ctx2=lil.getContext("2d");
+        var g2 = ctx2.createLinearGradient(0,0,120,0);
+        g2.addColorStop(0,"green");
+        g2.addColorStop(1,"red");
+        ctx2.fillStyle = g2;
+        ctx2.fillRect(0,0,150,80);
+    </script>
+
+</html>
